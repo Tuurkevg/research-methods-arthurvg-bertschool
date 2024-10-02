@@ -1,0 +1,195 @@
+%==============================================================================
+% Paper Research Methods: onderzoeksvoorstel
+%==============================================================================
+
+\documentclass{hogent-article}
+
+\usepackage{lipsum} % Voor vultekst
+
+% Invoegen bibliografiebestand
+\addbibresource{references.bib}
+
+% Informatie over de opleiding, het vak en soort opdracht
+\studyprogramme{Professionele bachelor toegepaste informatica}
+\course{Research Methods}
+\assignmenttype{Paper: Hoe kunnen ''Unmanned Aerial Vehicles'' en 2D mapping technologieën geïntegreerd worden in IT-systemen om de efficiëntie en nauwkeurigheid van landmetingen te verbeteren.}
+\academicyear{2023-2024}
+
+% TODO (fase 1): Werktitel
+\title{''Unmanned Aerial Vehicles''-integratie voor het verbeteren van 2D-mapping en het meten van grote gebieden.}
+
+% TODO (fase 1): Studentnaam en emailadres invullen
+\author{Van Ginderachter Arthur}
+\email{arthur.vanginderachter@student.hogent.be}
+
+% TODO (fase 1): Medestudent
+% Schrijf je het voorstel in samenwerking met een medestudent? Geef dan de naam
+% en emailadres hier. Als je het voorstel alleen schrijft, verwijder dan deze
+% regels of zet ze in commentaar.
+\author{Coudenys Bert}
+\email{bert.coudenys@student.hogent.be}
+
+% TODO (fase 1): Geef hier de link naar jullie Github-repository
+\projectrepo{https://github.com/HoGentTIN/RMVanGinderachterCoudenys}
+
+% Binnen welke specialisatierichting uit 3TI situeert dit onderzoek zich?
+% Kies uit deze lijst:
+%
+% - Mobile \& Enterprise development
+% - AI \& Data Engineering
+% - Functional \& Business Analysis
+% - System \& Network Administrator
+% - Mainframe Expert
+% - Als het onderzoek niet past binnen een van deze domeinen specifieer je deze
+%   zelf
+%
+\specialisation{System \& Network Beheer}
+% Geef hier enkele sleutelwoorden die je onderwerp beschrijven
+\keywords{UAV, 2D-Mapping, Landmeting}
+
+\begin{document}
+
+\begin{abstract}
+
+Onder andere in de agrarische sector, bouwsector en vastgoedsector is er een nood aan het in kaart brengen en meten van steeds grotere gebieden.
+Het meten van deze grote gebieden (tienduizend vierkante meter of groter) is een tijdrovend en duur proces voor landmeters. Dit omdat het traditionele proces van landmeten niet goed schaalbaar is voor die grote gebieden. In een wereld waar continu gestreefd wordt naar efficiëntie en kostenbesparing is het dus belangrijk om te kijken naar nieuwe technologieën die dit proces kunnen verbeteren.
+Dit onderzoek bekijkt het gebruik van commerciële ''Unmanned Aerial Vehicles'' (UAV's) voor landmetingen van grote gebieden en onderzoekt hoe de vooruitgang in UAV-technologie en software dit proces kan vergemakkelijken.
+Het hoofddoel is om de verbetering van commerciële UAV's te analyseren bij het uitvoeren van landmetingen.
+
+\vspace{0.5cm}
+
+Er wordt verduidelijking gebracht over hoe de evolutie van UAV-technologie nuttig kan zijn bij het revolutioneren van landmeettechnieken van grote gebieden.
+Hierbij wordt benadrukt hoe commerciële UAV's vanwege hun toegankelijkheid en betaalbaarheid tegenwoordig een enorme besparing kunnen bieden vergeleken met traditionele landmeettechnieken zoals het ''Total Station'' (TS).
+Daarnaast wordt onderzocht hoe specifieke functies en mogelijkheden van deze commerciële UAV's gebruikt kunnen worden om de efficiëntie en nauwkeurigheid van landmetingen te verbeteren, bijvoorbeeld aan de hand van bepaalde softwarepakketten.
+
+\vspace{0.5cm}
+Om de onderzoeksvraag te beantwoorden is ons onderzoek gedaan aan de hand van een aantal fases. Fase één is een basismeting van onze onderzoeksgrond aan de hand van traditionele metingen, in de tweede fase wordt een commerciële UAV gebruikt om hetzelfde gebied in kaart te brengen en een derde fase waarin de data van de UAV verwerkt is en vergeleken wordt met de traditionele metingen.
+Na het uitvoeren van deze fases wordt een conclusie getrokken over een eventuele verbetering in de efficiëntie en nauwkeurigheid van commerciële UAV's voor landmetingen van grote gebieden en of deze techniek op grote schaal bruikbaar en kosteneffectief is. Alsook of deze technologie de traditionele technieken kan vervangen.
+
+\vspace{0.5cm}
+
+De huidige bevindingen suggereren dat commerciële UAV's inderdaad een enorme verbetering kunnen zijn voor landmetingen van grote gebieden, maar dat er nog steeds enkele beperkingen zijn die moeten worden overwonnen voordat deze technologie op grote schaal toegepast kan worden.
+
+\end{abstract}
+
+\tableofcontents
+
+\bigskip
+
+% TODO: Neem je dit jaar ook de bachelorproef op? Haal dan de tekst hieronder
+% uit commentaar en pas aan voor jouw situatie.
+
+%\paragraph{Opmerking}
+
+% Ik neem dit jaar ook de bachelorproef op. De inhoud van dit onderzoeksvoorstel dient ook als het onderwerpvoor mijn bachelorproef. Mijn promotor is (Mr./Mevr.) X.\ Familienaam.
+
+% TODO: Beschrijf de eventuele verschillen en/of verbeteringen in dit document t.o.v.\ jouw onderzoeksvoorstel dat je ingediend hebt voor de bachelorproef.
+
+\section{Inleiding}%
+\label{sec:inleiding}
+
+% TODO: (fase 1 - onderzoeksvraag formuleren)
+
+Hoe kan het proces van terreinmetingen en het in kaart brengen van grote gebieden efficiënter gemaakt worden aan de hand van commerciële UAV's en 2D mapping technologieën?
+Een UAV (Unmanned Aerial Vehicle) is een onbemand luchtvaartuig dat wordt bestuurd op afstand of autonoom zichzelf bestuurt, vaak uitgerust met sensoren en camerasystemen voor verschillende toepassingen.
+In het geval van deze studie zal deze commerciële UAV enkel beschikken over een camera om foto's te nemen.
+Als er in dit onderzoek gerefereerd wordt naar grote gebieden dan wordt er gesproken over gebieden van tienduizend vierkante meter of groter.
+Het in kaart brengen en meten van deze grote gebieden is een grote uitdaging voor landmeters vanwege de enorme oppervlakte die moet worden in kaart gebracht en gemeten.
+
+Het probleem ligt dus in de noodzaak om dit proces efficiënter aan te pakken en dus de efficiëntie van terreinmetingen te verbeteren.
+Deze studie onderzoekt of het gebruik van commerciële UAV's voor 2D mapping het werkproces van landmeters kan verbeteren.
+Om deze vraag te beantwoorden wordt een methode gezocht en worden meerdere softwarepakketten onderzocht en vergeleken.
+Met het doel om een efficiëntere en nauwkeurigere methode te vinden voor het in kaart brengen van grote gebieden.
+Om deze conclusie te kunnen trekken zullen ook een aantal deelvragen beantwoord moeten worden, zoals:
+\begin{enumerate}
+\item Welke voordelen bieden commerciële UAV's in vergelijking met traditionele methoden voor landmetingen?
+\item Wat zijn de belangrijkste uitdagingen en beperkingen bij het gebruik van commerciële UAV's voor landmetingen van grote gebieden en hoe kunnen deze worden overwonnen?
+\item Wat zijn de belangrijkste softwarepakketten die momenteel gebruikt kunnen worden voor het plannen van de vlucht en het verwerken van de gegevens verzameld door deze commerciële UAV's en hoe dragen deze bij aan de verbetering van de efficiëntie en nauwkeurigheid van landmetingen?
+\end{enumerate}
+
+\section{Literatuurstudie}%
+\label{sec:literatuurstudie}
+
+% TODO: (fase 3, 4 - literatuurstudie)
+
+Zoals aangetoond door een recente studie gedaan door \textcite{Koeva2016}, heeft de opkomst van ''Unmanned Aerial Vehicles'' (UAV) de deur geopend voor een fascinerende nieuwe manier waarop grote gebieden en hun gegevens worden verzameld en geanalyseerd \autocite{UAVDefinitie}.
+Deze studie toont aan hoe commerciële UAV's kunnen worden gebruikt om nauwkeurige foto's en metingen te produceren voor kaartcreatie en het updaten van kaarten.
+Maar ook hoe deze technologie de efficiëntie hiervan kan verbeteren.
+
+\subsection{Efficiëntie}
+\label{sec:efficientie}
+Efficiëntie is een cruciale overweging bij het toepassen van UAV-technologie op grote schaal.
+Het minimaliseren van de tijd en middelen die nodig zijn voor terreinmetingen en kaartcreatie is van groot belang.
+Als er gesproken wordt over het efficiënter maken van het landmeetproces, wordt er bedoeld dat de tijd en middelen die nodig zijn voor het in kaart brengen en meten van een gebied kleiner zijn dan als traditionele methoden zouden worden gebruikt.
+Bijvoorbeeld, binnen een studie gedaan door \textcite{Koeva2016} slaagden ze erin om een gebied van ± 96.250 vierkante meter in kaart te brengen in twee dagen, waarvan maar twee uur vliegtijd nodig was.
+De rest van deze tijd werd gebruikt voor het verwerken en genereren van de kaart. Dit is een enorme efficiënte manier van het in kaart brengen van deze grote gebieden. Verder in deze studie refereren ze ook naar de moeilijkheden bij het vernieuwen van kaarten voor armere landen zoals Rwanda waar ze geen budget hebben voor iets zoals het vernieuwen van hun kaarten.
+Deze technologie zou daar enorm bij kunnen helpen.
+
+\subsection{Nauwkeurigheid}
+\label{sec:nauwkeurigheid}
+Zonder nauwkeurige gegevens is het onmogelijk om betrouwbare kaarten te maken. Vandaar in een studie gedaan door \textcite{madawalagama2016low} wordt er gekeken naar de nauwkeurigheid van commerciële UAV's zoals de DJI Phantom 3\textsuperscript{\textregistered} en de senseFly eBee\textsuperscript{\textregistered} voor het meten van een oppervlakte van 1,28 vierkante kilometer, hier werd gevonden dat dit mogelijk is met een verticale nauwkeurigheid van achtentwintig centimeter en een horizontale nauwkeurigheid van zeventien centimeter.
+Voor zo'n enorme oppervlakte duidt dit dus op een zeer nauwkeurige meting aangezien de foutenmarge zeer klein is.
+
+\subsection{Software}
+\label{sec:software}
+Er zijn veel verschillende soorten softwarepakketten die gebruikt kunnen worden voor het verwerken van de data die door de commerciële UAV's wordt verzameld. Pix4D\textsuperscript{\textregistered} is zo'n softwarepakket dat werd gebruikt binnen het onderzoek van \textcite{madawalagama2016low}, hierin werd dit softwarepakket specifiek gebruikt voor het creëren van 2D kaarten van een gebied van 1,28 vierkante kilometer.
+
+Er zijn vier verschillende softwarepakketten die relevant zijn voor onze studie. Deze pakketten zijn zowel commercieel verkrijgbaar als ook open source: Agisoft Metashape\textsuperscript{\textregistered}, SimActive Correlator3D\textsuperscript{\textregistered}, Pix4D\textsuperscript{\textregistered} en Web OpenDroneMap\textsuperscript{\textregistered} \autocite{pell2022demystifying}.
+Deze pakketten hebben elk hun unieke eigenschappen en doelgroep. Agisoft Metashape\textsuperscript{\textregistered} wordt vaak gebruikt voor algemene doeleinden en deze wordt ook veel gerefereerd in papers zoals die van \textcite{pell2022demystifying}.
+SimActive\textsuperscript{\textregistered} biedt dezelfde services aan als Agisoft Metashape\textsuperscript{\textregistered} maar wordt enkel ondersteund op Windows-toestellen. Pix4D\textsuperscript{\textregistered} is de enige van de vier die een volledige online cloud aanbieding biedt, hierdoor moet de gebruiker geen zware en dure hardware hebben om 2D kaarten te genereren aan de hand van commerciële UAV's.
+Web OpenDroneMap\textsuperscript{\textregistered} is een commercial-grade open-source project waardoor het kan draaien op elk verschillend besturingssysteem en deze dus geen beperkingen heeft zoals SimActive\textsuperscript{\textregistered} en Agisoft Metashape\textsuperscript{\textregistered}.
+
+Uit onderzoek gedaan door \textcite{pell2022demystifying} blijkt dat ze elk hun voor- en nadelen hebben en dat het afhankelijk is van wat de gebruiker zelf nodig heeft en wil. Zo presteren SimActive\textsuperscript{\textregistered} en Agisoft Metashape\textsuperscript{\textregistered} het best in tijd en bij grotere datasets zijn ze ook efficiënter waardoor ze sneller genereren dan Pix4D\textsuperscript{\textregistered} en Web OpenDroneMap\textsuperscript{\textregistered}.
+We moeten hier wel steeds rekening houden dat het type commerciële UAV ook altijd een enorme invloed heeft op de resultaten.
+
+Voor het plannen van de vlucht van deze commerciële UAV's is er één relevante optie voor ons. Dit betekent niet dat er geen alternatieven zijn, maar aangezien wij gebruik maken van een DJI Phantom 3\textsuperscript{\textregistered} is DJI Pilot\textsuperscript{\textregistered} de logische keuze.
+DJI Pilot\textsuperscript{\textregistered} wordt gebruikt voor het plannen van je vluchten en het automatisch in kaart brengen van je gebied. Deze software is specifiek ontworpen voor DJI UAV's en is dus niet compatibel met andere commerciële UAV's.
+
+\subsection{Traditionele Methoden}
+\label{sec:Traditionele Methoden}
+Voordat er een conclusie getrokken kan worden over de efficiëntie en nauwkeurigheid van commerciële UAV's voor landmetingen van grote gebieden is het belangrijk om te weten hoe deze commerciële UAV's presteren ten opzichte van de traditionele methoden. Eén voorbeeld van een traditionele technologie is het ''Total Station'' (TS) \autocite{chekole2014surveying}.
+Dit is een nauwkeurig instrument dat gebruikt wordt voor het meten van hoeken en afstanden en wordt vaak gebruikt voor het meten van kleine gebieden. Zoals gevonden in een studie door \textcite{chekole2014surveying} is de nauwkeurigheid van dit instrument ongeveer één mm in een optimale omgeving, maar ook vindt hij duidelijke beperkingen in dit instrument. Met een geoptimaliseerde lens voor grote afstanden blijft de maximale bruikbare afstand van dit instrument drieduizend meter. Dit limiteert dus de oppervlakte die gemeten kan worden met dit instrument.
+
+% Refereren naar de literatuur kan met:
+% \autocite{BIBTEXKEY} => (Auteur, jaartal): voor een referentie tussen
+% haakjes, waar de auteursnaam GEEN onderdeel is van een zin.
+% \textcite{BIBTEXKEY} => Auteur (jaartal): voor een narratieve referentie,
+% waar de naam van de auteur effectief een onderdeel is van de zin.
+
+\section{Methodologie}
+\label{sec:methodologie}
+
+% fase 1
+Om een correct resultaat te garanderen is het belangrijk een basismeting te hebben van de onderzoeksgrond. Dit zal gebeuren aan de hand van traditionele metingstechnieken (TS).
+De onderzoeksgrond valt binnen de definitie die gelegd is van een groot gebied en is dus geschikt voor dit onderzoek.
+% fase 2
+Na het meten van de onderzoeksgrond aan de hand van deze traditionele technologieën met bijvoorbeeld een ''Total Station'' (TS) wordt er een commerciële UAV gebruikt om hetzelfde gebied in kaart te brengen en te meten. Hierbij zal er gebruik gemaakt worden van een DJI Phantom 3\textsuperscript{\textregistered} drone.
+% fase 3
+Na het in kaart brengen van de onderzoeksgrond door de commerciële UAV zal de data die hieruit voortkomt verwerkt worden door de softwarepakketten die hiervoor vermeld zijn. Na het verwerken van deze data zal deze data vergeleken worden met de data die verkregen is door de traditionele metingstechnieken.
+Na deze vergelijking kan er een conclusie getrokken worden over de efficiëntie en nauwkeurigheid van commerciële UAV's voor landmetingen van grote gebieden. Alsook welke software het beste resultaat biedt voor deze toepassing.
+
+\section{Verwachte resultaten}%
+\label{sec:verwachte-resultaten}
+
+% TODO: (fase 6 - afwerking)
+Er wordt verwacht dat commerciële UAV's inderdaad een positieve invloed kunnen hebben op de efficiëntie en nauwkeurigheid van landmetingen voor grote gebieden. Dit is gebaseerd op een studie door \textcite{madawalagama2016low}, die benadrukt hoe voor een groot gebied het gebruik van commerciële UAV's zoals de DJI Phantom 3\textsuperscript{\textregistered} en de senseFly eBee\textsuperscript{\textregistered} een enorme efficiëntieverbetering kunnen bieden. 
+Vandaar wordt er ook verwacht in dit onderzoek dat de commerciële UAV's een positieve invloed zullen hebben op de landmetingen voor die grote gebieden vergeleken met traditionele methoden. Er wordt gehoopt een verbetering te zien ten opzichte van zowel de traditionele methoden als ook ten opzichte van de resultaten van \textcite{madawalagama2016low}.
+
+\section{Discussie, verwachte conclusie}%
+\label{sec:discussie-conclusie}
+
+
+Een positief resultaat van dit onderzoek zou een enorme impact kunnen hebben op meerdere sectoren en de mogelijkheid bieden om het in kaart brengen en landmeten van grote gebieden te revolutioneren. Vanwege de mogelijke kostenbesparing zou dit onderzoek ook de mogelijkheid kunnen bieden voor landen of steden met minder financiële middelen om hun kaarten te vernieuwen en up-to-date te houden.
+Zelfs als de resultaten niet positief zijn en er geen verbetering is in de efficiëntie en nauwkeurigheid van landmetingen door het gebruik van commerciële UAV's, dan is dit ook een belangrijk resultaat. Dit zou betekenen dat er nog steeds beperkingen zijn die moeten worden overwonnen voordat deze technologie op grote schaal toegepast kan worden.
+Dit is een evoluerend veld en dus wordt er verwacht dat er in de toekomst nog veel verbeteringen zullen komen in de technologie en software die gebruikt worden voor deze toepassing. Dus zelfs als de resultaten niet positief zijn, dan is dit onderzoek nog steeds een belangrijke stap in de goede richting voor het verbeteren van landmeettechnologieën.
+
+%------------------------------------------------------------------------------
+% Referentielijst
+%------------------------------------------------------------------------------
+% TODO: (fase 4) de gerefereerde werken moeten in BibTeX-bestand
+% bibliografie.bib voorkomen. Gebruik JabRef om je bibliografie bij te
+% houden.
+
+\printbibliography[heading=bibintoc]
+
+\end{document}
